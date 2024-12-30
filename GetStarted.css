@@ -1,0 +1,465 @@
+body {
+    background-color: rgb(19, 19, 44);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 15px 30px;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(to bottom,rgb(1, 1, 46)68%, rgba(19, 19, 44, 0.63));
+        
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+}
+
+
+.logo .logoimg{
+    width: 80px;
+    height: 80px;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 17px;
+    z-index: 1111;
+    list-style: none;
+}
+
+.iconv{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* navbar animation */
+@keyframes showNav {
+    0%   {opacity: 0;}
+    100% {opacity:  1;}
+}
+
+#navshow{
+    animation: showNav 1s forwards;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header ul li a{
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+
+.navbar li a::after{
+    content: "";
+    width: 0px;
+    transition: 0.5s all ease-in;
+    display: block;
+    color: rgb(0, 185, 218);
+
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+    align-content: center;
+    border: #fff solid 0.5px;
+    
+}
+
+.navbar li a:hover{
+    letter-spacing: 1.5px;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1.4px;
+    text-shadow: 0 0 0 20px;
+    color: #fff;
+}
+
+
+
+
+/* ================================================================registration-container ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    background-color: rgb(1, 1, 46);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    overflow: hidden;
+    width: 1000px;
+    max-width: 100%;
+    min-height: 560px;
+    margin-top: 190px;
+    margin-bottom: -200px;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: rgb(0, 185, 218);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+.container button {
+    background-color: #00aced;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: #6cd7ff;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: #1e1e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input,
+.container select {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+}
+
+.container.active .toggle-container {
+    transform: translateX(-100%);
+}
+
+.toggle {
+    background-color: #512da8;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 128, 160),  rgb(1, 37, 159));
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+
+.terms {
+    display: inline;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.terms .TermsCheckbox{
+    position: absolute;
+    left: 0;
+    margin-left: -120px;
+    margin-top: 3px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+
+
+/* ================================================================================   FOOTER  ================================================== */
+
+
+footer {
+    background-color: rgb(23, 23, 55);
+    color: #fff;
+    padding: 40px 0;
+    bottom: 0;
+    margin-top: 1800px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.links{
+    margin-left: 20px;
+}
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section h3:hover{
+    transition: all ease .2s;
+    letter-spacing: 2px;
+
+}
+
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    transition: all ease .2s;
+    color: rgb(0, 185, 218);
+    text-decoration: underline;
+}
+
+.Payment .PaymentIcons img{
+    width: 50px;
+}
+
+.Payment .PaymentIcons img:hover{
+    box-shadow: 0 0 14px 0 rgb(0, 185, 218);
+
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(23, 23, 55);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgb(0, 185, 218);
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(23, 23, 55);
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+

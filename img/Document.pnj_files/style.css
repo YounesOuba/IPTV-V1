@@ -1,0 +1,1221 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    color: #fff;
+    
+}
+
+body{
+    /* background-image: repeating-linear-gradient(135deg, rgba(4, 229, 71,0.08) 0px, rgba(4, 229, 71,0.08) 1px,transparent 1px, transparent 9px),repeating-linear-gradient(45deg, rgba(4, 229, 71,0.08) 0px, rgba(4, 229, 71,0.08) 1px,transparent 1px, transparent 9px),linear-gradient(90deg, rgb(2,2,46),rgb(1,1,46)); */
+    background: rgb(19, 19, 44);
+    color: #fff;
+    overflow-x: hidden;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 15px 30px;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(to bottom,rgb(1, 1, 46)68%, rgba(19, 19, 44, 0.63));
+        
+
+}
+
+
+.logo .logoimg{
+    width: 80px;
+    height: 80px;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.iconv{
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* navbar animation */
+@keyframes showNav {
+    0%   {opacity: 0;}
+    100% {opacity:  1;}
+}
+
+#navshow{
+    animation: showNav 0.5s forwards;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+
+.navbar li a::after{
+    content: "";
+    width: 0px;
+    transition: 0.5s all ease-in;
+    display: block;
+    color: rgb(0, 185, 218);
+
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+    align-content: center;
+    border: #fff solid 0.5px;
+    
+}
+
+.navbar li a:hover{
+    letter-spacing: 1.5px;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1.4px;
+    text-shadow: 0 0 0 20px;
+    color: #fff;
+}
+
+ /*---------------- Responsive Navbar ----------------------*/
+@keyframes nav{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+/* ============================================ MEDIA============================================ */
+
+@media(max-width:1168px){
+    .logo{
+        margin-left: 2rem;
+    }
+    .navbar ul{
+         margin-left: 2rem;
+    }
+}
+
+@media(max-width:900px){
+    .navbar{
+        font-size: 1.7rem;
+        cursor: pointer;
+        display: block;
+        padding: 15px;
+        z-index: 10001;
+    }
+    .logo{
+        z-index: 10001;
+        margin-left: -12px;
+    }
+    header{
+        border-radius: 30px;
+    }
+    header .navbar{
+        height: 0px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        transition: .5s;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 10001;
+        flex-direction: column;
+    }
+    header .navbar.active{
+        height: 300px;
+         
+    }
+    header .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 60px auto 0 auto;
+        text-align: center;
+        transition: .4s ease;
+    }
+    header .navbar.active{
+        opacity: 1;
+    }
+    header .navbar ul{
+        transform: translateY(60px);
+
+    }
+    header .navbar ul li a{
+        display: inline-block;
+    }
+
+}
+.content{
+    position: relative;
+    text-align: center;
+    transform: translateY(200px); 
+    width: 100%;
+    filter: brightness(110%);
+}
+
+
+.content .bg{
+    position: absolute;
+    filter: brightness(50%);
+    background: url(img/wp.jpg);
+    z-index: -1;
+    animation: showContent .8s forwards;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -120px;
+    margin-bottom: 200px;
+    padding-top:200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.content h1{
+    font-size: 4rem;
+    letter-spacing: .3rem;
+}
+
+.content p{
+    font-size: 1.1rem;
+    color: #ffffffc4;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 20px 0px;
+}
+
+.content-btn{
+    margin-top:60px;
+    padding: 10px 29px;
+    border-radius: 0px 10px;
+    color: #fff;
+    background-color: rgba(1, 1, 137, 0.982);
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px;
+}
+
+.content-btn:hover{
+    color: rgba(1, 1, 137, 0.982);
+    background-color: rgba(248, 248, 248, 0.982);
+    letter-spacing: 1.4px;
+    text-shadow: 0 0 0 20px;
+
+}
+
+
+@media(max-width:800px){
+    .content h1{
+        font-size: 3rem;
+
+    }
+    .content p{
+        font-size: 1rem;
+    }
+
+}
+@media(max-width:600px){
+    .content h1{
+        font-size: 2.5rem;
+
+    }
+
+    .content p{
+        font-size: 1rem;
+    }
+
+}
+@media(max-width:400px){
+    .content h1{
+        font-size: 1.4rem;
+        
+    }
+    .content p{
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+
+.film{
+    padding-top: 120px;
+}
+
+.cards{
+    transform: translateY(-80px);
+    white-space: nowrap;
+    /* no wrap bach maytiihouch tsawer lteht fach tsgher lpage */
+}
+
+
+.film-slide{
+    display: inline-block;
+    animation: 34s  filmSlide infinite linear;
+}
+
+@keyframes filmSlide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.card{
+    transform: translateY(-80px);
+    white-space: nowrap;
+}
+.small-slide{
+    display: inline-block;
+    animation: 34s  smallSlide infinite linear;
+}
+
+@keyframes smallSlide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.film-slide img{
+    margin: 3px;
+    width: 150px;
+    height: 220px;
+    border-radius: 10px 0;
+
+}
+
+
+.film-slide img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 185, 218, 0.6);
+    transition: all ease-in-out .1s;
+}
+
+
+.small-slide img{
+    margin: 3px;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px 0;
+}
+
+.small-slide img:hover{
+    cursor: pointer;
+}
+
+
+/*_______________________________________WHYCHOOSE______________________________________*/
+
+.WhyChose{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-left: -10px;
+    }
+
+.WhyChose .chose-Card{
+    width: 100%;
+    display: flex;
+
+}
+    
+    .chose-Card .card{
+    border-radius: 55px 55px 55px;
+    background: rgb(1, 1, 46);
+    box-shadow: 1px 1px 1px 1px rgb(0, 185, 218, 0.7);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 25.5%;
+    margin: 10px;
+   
+    }
+    
+    .chose-Card .card:hover{
+    transition: all ease .5s;
+    box-shadow: 1px 1px 10px 5px rgb(0, 185, 218, 0.7);
+    }
+    
+    .chose-Card .card .img1{
+    width: 130px;
+    margin-bottom: 20px;
+    }
+    .chose-Card .card .img2{
+    width: 140px;
+    margin-bottom: 20px;
+    }
+    .chose-Card .card .img3{
+    width: 140px;
+    margin-bottom: 20px;
+    }
+    .chose-Card .card .img4{
+    width: 160px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    }
+    
+    .chose-Card .card .text{
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: -20px;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    
+    .chose-Card .card .textph{
+    width: 100%;
+    letter-spacing: 1px;
+    font-style: italic;
+    line-height: 23px;
+    color: #fff;
+    text-align: center;
+    font-size: medium;
+    }
+
+@media(max-width:1223px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chose-Card .card{
+        width: 300px;
+        margin: 10px;
+    }
+    
+    .chose-Card .card h2{
+        font-size: 1.2rem;
+    }
+
+    .chose-Card .card{
+        letter-spacing: 0px;
+    }
+}
+
+@media(max-width:1153px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chose-Card .card{
+        width: 330px;
+    }
+
+    .chose-Card .card h1{
+        font-size: 1rem;
+    }
+
+    .chose-Card .card p{
+        letter-spacing: 0px;
+        line-height: 22px;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:1000px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chose-Card .card{
+        width: 300px;
+        padding: 8px;
+    }
+
+    .chose-Card .card h1{
+        font-size: 0.9rem;
+    }
+
+    .chose-Card .card p{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media(max-width:600px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chose-Card .card{
+        width: 450px;
+        padding: 8px;
+    }
+
+    .chose-Card .card h1{
+        font-size: 0.9rem;
+    }
+
+    .chose-Card .card p{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media(max-width:800px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chose-Card .card{
+        width: 370px;
+        padding: 8px;
+    }
+
+    .chose-Card .card h1{
+        font-size: 0.9rem;
+    }
+
+    .chose-Card .card p{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:900px){
+    .chose-Card .card .text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chose-Card .card{
+        width: 390px;
+        padding: 8px;
+    }
+
+    .chose-Card .card h1{
+        font-size: 0.9rem;
+    }
+
+    .chose-Card .card p{
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+
+/* ----------------------------------------- CHOSE YOUR PLAN --------------------------------------------------- */
+
+.pricing_title .titlepricing{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    margin-top: -40px;
+}
+
+.pricing_title .titlepricing:hover{
+    transition: all ease .4s;
+    letter-spacing: 5px;
+    text-decoration: wavy;
+}
+
+.pricing_title .careabout{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    width: 60%;
+    margin:20px 20% 20px 20%;
+
+
+}
+
+.pricing_title .discount{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
+.pricing_title .hr2{
+    width: 20%;
+    align-items: center;
+    margin-left: 40.1%;
+    margin-top: 20px;
+
+}
+
+
+
+/* <!-- ----------------------------------------------------PRICING  TABLE  SECTION------------------------------------------------------------------------------> */
+
+
+.pricing_table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrapper, .wrapper1, .wrapper2 {
+    overflow: hidden;
+    justify-content: space-around;
+    background-color: rgba(1, 1, 60, 0.982);
+    border: 2px solid rgb(0, 185, 218);
+    color: #fff;
+    width: 400px;
+    height: 95vh;
+    border-radius: 30px;
+    flex: 1;
+    margin: 0 10px;
+    transition: all ease-in-out .4s;
+    
+}
+
+.wrapper2:hover {
+    transition: all ease .5s;
+    box-shadow: 1px 1px 10px 5px rgb(0, 185, 218);
+    background-color:hsla(250, 97%, 18%, 0.982);
+    height: 105vh;
+
+}
+
+.wrapper1:hover {
+    transition: all ease .5s;
+    box-shadow: 1px 1px 10px 5px rgb(0, 185, 218);
+    background-color:hsla(250, 97%, 18%, 0.982);
+    height: 105vh;
+
+
+}
+
+.wrapper:hover {
+    transition: all ease-in-out .5s;
+    box-shadow: 1px 1px 10px 5px rgb(0, 185, 218);
+    background-color:hsla(250, 97%, 18%, 0.982);
+    height: 105vh;
+
+
+}
+
+.wrapper .title, .wrapper1 .title, .wrapper2 .title {
+    margin-left: 60px;
+    padding-top: 40px;
+    font-size: 1.7rem;
+}
+
+.wrapper .pricing .price, .wrapper1 .pricing .price, .wrapper2 .pricing .price {
+    width: 85%;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: end;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border: 1.5px solid;
+    border-color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #fff;
+    color: rgba(1, 1, 137, 0.982);
+}
+
+.pricing .text {
+    color: rgba(1, 1, 137, 0.982);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: -30px;
+    font-weight: 700;
+}
+
+.wrapper .list, .wrapper1 .list, .wrapper2 .list {
+    padding-top: 40px;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+.hr {
+    width: 60%;
+    color: #fff;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.Get_started{
+    background-color: #fff;
+    position: absolute;
+    overflow: visible;
+    border: 1px solid;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    z-index: 1111;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px;
+}
+
+
+.Get_started .textget:hover, .Get_started1 .textget:hover, .Get_started2 .textget:hover {
+    text-decoration: underline;
+    transition: all ease .5s;
+}
+
+.Get_started .textget, .Get_started1 .textget, .Get_started2 .textget {
+    font-weight: 700;
+    color: rgba(1, 1, 137, 0.982);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+.Get_started .textget:hover{
+    color: hsl(0, 100%, 50%);
+    transition: all ease .4s;
+    letter-spacing: 0.3px;
+    
+}
+
+
+/* ------------------------------------------------------SECTION 10 ------------------------------------------------ */
+
+.section10{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -120px;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+}
+
+.section10 .pictext{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section10 .pictext .image{
+    width: 50%;
+    height: 60%;
+}
+
+.section10 .pictext .text{
+    width: 36%;
+    text-align: center;
+    align-self: center;
+}
+
+.section10 .pictext .text h2{
+    font-size: 3rem;
+    top: 0;
+    margin-top: 0px;
+}
+
+.section10 .pictext .text p{
+    font-family: 'Raleway', sans-serif;
+    color: #7a8492;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+}
+
+.section10 .pictext .buttonn{
+    display: flex;
+    
+}
+.section10 .pictext .buttonn .button{
+    position: relative;
+    background-color: rgb(222, 20, 20);
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    left: 36%;
+    width: 150px;
+}
+
+.section10 .pictext .buttonn .button a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    text-align: start;
+}
+
+
+
+.section10 .pictext .button .arrow{
+    position: absolute;
+    display: inline-flex;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* hover effect */
+.section10 .pictext .button:hover {
+    box-shadow: inset 0 0 10px rgba(255,255,255,.2),inset 0 0 30px rgba(255,255,255,.4);
+    box-shadow: 0px 0px 20px #fff;
+}
+
+
+/* ------------------------------------------------------------SECTION 11----------------------------------------------------- */
+.section11{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -60px;
+
+}
+
+.section11 .pictext{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section11 .pictext .image{
+    width: 30%;
+    height: 40%;
+}
+
+.section11 .pictext .text{
+    width: 36%;
+    text-align: center;
+    align-self: center;
+}
+
+.section11 .pictext .text h2{
+    font-size: 3.4rem;
+    top: 0;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.section11 .pictext .text p{
+    font-family: 'Raleway', sans-serif;
+    color: #7a8492;
+    line-height: 1.7em;
+    letter-spacing: 0.05em;
+}
+
+.section11 .pictext .buttonn{
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+
+.section11 .pictext .buttonn .button{
+    position: relative;
+    background-color: rgb(222, 20, 20);
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    left: 36%;
+    width: 150px;
+}
+
+.section11 .pictext .buttonn .button a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    text-align: start;
+}
+
+
+
+.section11 .pictext .button .arrow{
+    position: absolute;
+    display: inline-flex;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* hover effect */
+.section11 .pictext .button:hover {
+    box-shadow: inset 0 0 10px rgba(255,255,255,.2),inset 0 0 30px rgba(255,255,255,.4);
+    box-shadow: 0px 0px 20px #fff;
+}
+
+
+
+/* --------------------------------------------------------  INSCRIPTION ------------------------------------------------------------ */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -30px;
+}
+.signup-container {
+    position: absolute;
+    width: 400px;
+    right: 40px;
+    margin-top: -20px;
+    border: 1px solid  rgb(0, 185, 218);
+    box-shadow:0px 0px 30px 2px rgb(0, 185, 218);
+    border-radius: 30px;
+    padding: 40px;
+    margin-left: 70px;
+    
+}
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 16px;
+}
+.signup-container button:hover {
+    background-color: #c82333;
+}
+.faq-container {
+    width: 680px;
+}
+.faq-container h2 {
+    margin-bottom: 28px;
+    font-size: 3rem;
+}
+
+.faq-container h2:hover{
+    letter-spacing: 1px;
+    margin-left: 15px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+}
+.faq-container .faq {
+    margin-bottom: 20px;
+}
+.faq-container .faq h4 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.faq-container .faq h4:hover{
+    letter-spacing: 1px;
+    margin-left: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+}
+.faq-container .faq p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* ------------------------------------------------------MAP Section-=----------------------------------------------------- */
+
+.hrTHT{
+    width: 70%;
+    margin-left: 170px;
+}
+
+.mapSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.mapSection .Lmofiid{
+    width: 50%;
+    margin-left: 30px;
+}
+
+.Lmofiid h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.Lmofiid h4{
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapSection img{
+    width: 50%;
+    height: 60%;
+    margin-right: 50px;
+}
+
+.mapSection .ContactUsBtn{
+    color: #fff;
+    background-color: #c82333;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 20px 0px 20px 0px;
+    border: none;
+    box-shadow: 0 0 7px 0 #fff;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.mapSection .ContactUsBtn:hover{
+    transition: all ease-in-out .1s;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+/* =================================================================== FOOTER ===================================================================== */
+
+
+footer {
+    background-color: rgb(23, 23, 55);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.links{
+    margin-left: 20px;
+}
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section h3:hover{
+    transition: all ease .2s;
+    letter-spacing: 2px;
+
+}
+
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    transition: all ease .2s;
+    color: rgb(0, 185, 218);
+    text-decoration: underline;
+}
+
+.Payment .PaymentIcons img{
+    width: 50px;
+}
+
+.Payment .PaymentIcons img:hover{
+    box-shadow: 0 0 14px 0 rgb(0, 185, 218);
+
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(23, 23, 55);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgb(0, 185, 218);
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(23, 23, 55);
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+/* ==========================================================  CHANNELS  ============================================================== */
+
+.channelsSection {
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.channel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.channel {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid rgb(0, 185, 218);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.channel-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.channel-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(19, 19, 44);
+}

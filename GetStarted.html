@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="GetStarted.css">
+    <title>Modern Login Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo slide-in-left"><img src="img/iptvlogo.jpg" alt="" class="logoimg"></a>
+        <nav class="navbar slide-in-right" id="nv">
+            <li><a href="index.html" class="Home zoom-in"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="index.html#channelsSection" class="Channels zoom-in"><i class="fa-solid fa-tv"></i> Channels</a></li>
+            <li><a href="index.html#installation-guide" class="Installation zoom-in"><i class="fa-solid fa-cloud"></i> Installation Guide</a></li>
+            <li><a href="index.html#reseller-section" class="Reseller zoom-in"><i class="fa-solid fa-cart-shopping"></i> Reseller</a></li>
+            <li><a href="index.html#order-now-section" class="Order zoom-in"><i class="fa-solid fa-circle-down"></i> Order Now</a></li>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="register.php" method="POST">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Full Name" name="full_name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                <select id="subscription_plan" name="subscription_plan">
+                    <option value="basic">Basic</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <label for="terms" class="terms" >
+                        <input type="checkbox" id="terms" name="terms" class="TermsCheckbox" required>I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="login.php" method="POST">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for login</span>
+                <input type="email" placeholder="Email" name="login_email" required>
+                <input type="password" placeholder="Password" name="login_password" required>
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+
+     <!-- ============================================================================== FOOTER ================================================================ -->
+
+     <footer>
+        <div class="footer-container fade-in">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are the #1 trusted and established IPTV provider, committed to exceeding customer expectations and cultivating enduring relationships.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Channels</a></li>
+                    <li><a href="#">Installation Guide</a></li>
+                    <li><a href="#">Reseller</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@iptvservice.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 IPTV St, Streaming City, SC 12345</p>
+            </div>
+
+            <div class="footer-section Payment">
+                <h3>Payment Methode</h3>
+                <div class="PaymentIcons">
+                    <!-- <i class='bx bxl-paypal'></i>
+                    <i class='bx bxl-visa' ></i>
+                    <i class='bx bxl-mastercard' ></i> -->
+                    <img src="img/paypal.jpg" alt="">
+                    <img src="img/Visa.jpg" alt="">
+                    <img src="img/mastercard.jpg" alt="">
+                    <img src="img/googlepay.jpg" alt="">
+                    <img src="img/applepay.jpg" alt="">
+                    <img src="img/fedex.jpg" alt="">
+
+                </div>
+
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 IPTV Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

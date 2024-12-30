@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="index.js"></script>
+
+</head>
+<body> 
+    <section class="main" id="main">
+        <header class="header">
+            <a href="" class="logo slide-in-left"><img src="img/iptvlogo.jpg" alt="" class="logoimg"></a>
+    <!--=================================== NAVBAR =========================================-->
+            <nav class="navbar slide-in-right" id="nv">
+                <div class="iconv" id="bar"><i class="fa-solid fa-bars"  onclick="toggleMenu()"></i></div>
+
+                    <li><a href="#main" class="Home zoom-in"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#channelsSection" class="Channels zoom-in"><i class="fa-solid fa-tv"></i> Channels</a></li>
+                    <li class="Installation"><a href="#installation-guide" class="Installation zoom-in"><i class="fa-solid fa-cloud"></i> Installation Guide</a></li>
+                    <li><a href="#reseller-section" class="Reseller zoom-in"><i class="fa-solid fa-cart-shopping"></i> Reseller</a></li>
+                    <li><a href="#order-now-section" class="Order zoom-in"><i class="fa-solid fa-circle-down"></i> Order Now</a></li>
+            </nav>
+
+        </header>
+
+        <div class="content slide-in-right ">
+            <div class="bg"></div>
+            <h1 class=" slide-in-right">All-In-One Quality<br>IPTV Service</h1>
+            <p class=" slide-in-right">Unlock a World of Entertainment with Our Service: Access Thousands of Global Channels, 
+                <br>Countless Movies, and an Extensive Collection of Series!</p>
+            <br>
+
+            <a href="GetStarted.html" class="getstartedlink"><button id="GetStarted" class="content-btn slide-in-right">GET STARTED</button></a>
+
+        </div>
+    </section>
+    
+<!--============================ SECOND SECTION (FILM SLIDE) ================================-->
+<br>
+<br>
+
+    <section class="film hidden fade-in" id="hidden">
+        <div class="cards">
+            <div class="film-slide">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </div>
+            <div class="film-slide">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="small-slide">
+                <img src="img/A.webp" alt="">
+                <img src="img/B.webp" alt="">
+                <img src="img/C.webp" alt="">
+                <img src="img/D.webp" alt="">
+                <img src="img/E.webp" alt="">
+                <img src="img/F.webp" alt="">
+                <img src="img/G.webp" alt="">
+                <img src="img/H.webp" alt="">
+                <img src="img/I.webp" alt="">
+                <img src="img/J.webp" alt="">
+                <img src="img/K.webp" alt="">
+                <img src="img/L.webp" alt="">
+            </div>
+            <div class="small-slide">
+                <img src="img/A.webp" alt="">
+                <img src="img/B.webp" alt="">
+                <img src="img/C.webp" alt="">
+                <img src="img/D.webp" alt="">
+                <img src="img/E.webp" alt="">
+                <img src="img/F.webp" alt="">
+                <img src="img/G.webp" alt="">
+                <img src="img/H.webp" alt="">
+                <img src="img/I.webp" alt="">
+                <img src="img/J.webp" alt="">
+                <img src="img/K.webp" alt="">
+                <img src="img/L.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!--======================================== END FILM SLIDE ======================================-->
+    <!-- ------------------------------------------WHY CHOOSE------------------------------------------------------- -->
+<hr class="hrTHT">
+<br><br>
+
+<section class="WhyChose">
+    <div class="chose-Card">
+
+        <!-- Card 1: Money Back Guarantee -->
+        <div class="card hidden slide-in-right">
+            <img class="img1" src="img/guarantee.png" alt="Money Back Guarantee">
+            <h2 class="text">7 days money<br>back guarantee</h2>
+            <p class="textph">
+                Within 7 days of your purchase, you have the option to cancel our IPTV subscription if you are not satisfied. 
+                You will then receive a full refund from us.
+            </p>
+        </div>
+
+        <!-- Card 2: Channels Worldwide -->
+        <div class="card hidden slide-in-right">
+            <img class="img2" src="img/channels.png" alt="Channels Worldwide">
+            <h2 class="text">Channels from 115<br>countries worldwide</h2>
+            <p class="textph">
+                You can watch TV channels from around the world (Netherlands, Belgium, Germany, UK, Spain, Portugal, Poland, 
+                Italy, Hindi, Arabic, Turkey, and more).
+            </p>
+        </div>
+
+        <!-- Card 3: High Quality Streaming -->
+        <div class="card hidden slide-in-right">
+            <img class="img3" src="img/highquaity.png" alt="High Quality Streaming">
+            <h2 class="text">High Quality HD/FHD/4K/8K</h2>
+            <p class="textph">
+                We offer all image qualities to view our IPTV service everywhere, regardless of your network speed on mobile, TV, Android box, PC, etc.
+            </p>
+        </div>
+
+        <!-- Card 4: Live Support -->
+        <div class="card hidden slide-in-right">
+            <img class="img4" src="img/live support.png" alt="Live Support">
+            <h2 class="text">Live Support</h2>
+            <p class="textph">
+                24/7 availability. You can contact us whenever you want through different methods, either via WhatsApp or email.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ====================================================   SECTION 10 ------------------------------------------------------- -->
+
+    <section class="section10 slide-in-left " id="hidden">
+        <div class="pictext">
+            <img src="img/ffffff.jpg" alt="" class="image">
+            <div class="text">
+                <h2>The #1 Most Trusted and Established IPTV Provider in the US</h2>
+                <p>we take pride in being the top choice for IPTV Premium 2024 services. 
+                    Our unwavering commitment is to exceed customer expectations and cultivate enduring relationships.</p>
+
+                <div class="buttonn slide-in-left"><button class="button"><a href="">Start Now <span class="arrow"><i class='bx bxs-right-arrow-circle' id="arrow"></i></span></a></button></div>
+            </div>
+
+        </div>
+
+    </section>
+<!----------------------------------------------------------------- PRICING--------------------------------------------------------------- -->
+    <div class="pricing_title">
+        <h2 class="titlepricing slide-in-left">CHOOSE YOUR PLAN</h2>
+        <hr class="hr2 fade-in">
+        <p class="careabout slide-in-right">We care about your streaming cost &  care about utilization of your money . That's why we're offering the most affordable prices for you.
+            Wastege of money for cable streaming is not good for now a days. So pick your preferable package now.</p>
+        <p class="discount zoom-in">-50% INCLUDED ON OUR PLANS</p>
+    </div>
+     <!-- ---------------------------------------------------- FIRST   PRICING  TABLE  SECTION------------------------------------------------------------------------------>
+    <section class="pricing_table slide-in-left">
+        <div class="wrapper">
+            <h3 class="title"> Basic</h3>
+            <div class="pricing"> 
+                <h3 class="price">$ 29.00</h3>
+                <h3 class="text">/ Per Month</h3>
+            </div>
+            <ul class="list">
+                <li><i class='bx bx-checkbox-checked' ></i> Premium Server</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +22,500 Live Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +100,000 Movies & TV Shows</li>
+                <li><i class='bx bx-checkbox-checked' ></i> PPV & VPlayed Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> NFL, MLB, Boxing MMA...</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Netflix & Disney+ & Amazon Prime</li>
+                <li><i class='bx bx-checkbox-checked' ></i> 4K/8k/FHD/HD Quality Streaming</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Free & auto updates every week</li>
+                <li><i class='bx bx-checkbox-checked' ></i> TV Guide (EPG)</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Anti Buffering</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Support 24/7/365</li>
+            </ul>
+            <div class="hr"><hr></div>
+            <button class="Get_started"><a href="" class="textget">Get Started</a></button>
+        </div>
+
+            <!-- ---------------------------------------------------- SECOND   PRICING  TABLE  SECTION------------------------------------------------------------------------------>
+
+        <div class="wrapper1">
+            <h3 class="title"> Standard</h3>
+            <div class="pricing"> 
+                <h3 class="price">$ 345.00</h3>
+                <h3 class="text">/ Per Year</h3>
+            </div>
+            <ul class="list">
+                <li><i class='bx bx-checkbox-checked' ></i> Premium Server</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +22,500 Live Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +100,000 Movies & TV Shows</li>
+                <li><i class='bx bx-checkbox-checked' ></i> PPV & VPlayed Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> NFL, MLB, Boxing MMA...</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Netflix & Disney+ & Amazon Prime</li>
+                <li><i class='bx bx-checkbox-checked' ></i> 4K/8k/FHD/HD Quality Streaming</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Free & auto updates every week</li>
+                <li><i class='bx bx-checkbox-checked' ></i> TV Guide (EPG)</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Anti Buffering</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Support 24/7/365</li>
+            </ul>
+            <div class="hr"><hr></div>
+            <button class="Get_started"><a href="" class="textget">Get Started</a></button>
+        </div>
+
+        <!-- ---------------------------------------------------- THIRD   PRICING  TABLE  SECTION------------------------------------------------------------------------------>
+
+        <div class="wrapper2">
+            <h3 class="title"> Pro</h3>
+            <div class="pricing"> 
+                <h3 class="price">$ 670.00</h3>
+                <h3 class="text">/ Most Used</h3>
+            </div>
+            <ul class="list">
+                <li><i class='bx bx-checkbox-checked' ></i> Premium Server</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +22,500 Live Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> +100,000 Movies & TV Shows</li>
+                <li><i class='bx bx-checkbox-checked' ></i> PPV & VPlayed Channels</li>
+                <li><i class='bx bx-checkbox-checked' ></i> NFL, MLB, Boxing MMA...</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Netflix & Disney+ & Amazon Prime</li>
+                <li><i class='bx bx-checkbox-checked' ></i> 4K/8k/FHD/HD Quality Streaming</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Free & auto updates every week</li>
+                <li><i class='bx bx-checkbox-checked' ></i> TV Guide (EPG)</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Anti Buffering</li>
+                <li><i class='bx bx-checkbox-checked' ></i> Support 24/7/365</li>
+            </ul>
+            <div class="hr"><hr></div>
+            <button class="Get_started"><a href="" class="textget">Get Started</a></button>
+        </div>
+    </section>
+        <br>
+        <br>
+
+        <hr class="hrTHT fade-in">
+        <br>
+<!-- --------------------------------------------------- SECTION 11 ---------------------------------------------------------- -->
+        <section class="section11">
+            <div class="pictext">
+                <div class="text slide-in-right">
+                    <h2>Compatible With All Devices</h2>
+                    <p>Our IPTV Service Supports All Devices, including Smart TVs, Android Boxes, Phones, 
+                        Apple Devices, Amazon Fire Stick, KODI, and MAG Box. Enjoy Seamless Entertainment 
+                        Across All Your Preferred Devices.</p>
+    
+                        <div class="buttonn"><button class="button"><a href="">Start Now <i class=' arrow bx bxs-right-arrow-circle' id="arrow" style="font-size: medium;"></i></a></button></div>
+            </div>
+            <div>
+                <img src="img/here3.jpg" class=" image slide-in-left" alt="">
+            </div>
+        </section>
+    
+    <section class="film fade-in">
+        <div class="cards">
+            <div class="film-slide">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </div>
+            <div class="film-slide">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="small-slide">
+                <img src="img/A.webp" alt="">
+                <img src="img/B.webp" alt="">
+                <img src="img/C.webp" alt="">
+                <img src="img/D.webp" alt="">
+                <img src="img/E.webp" alt="">
+                <img src="img/F.webp" alt="">
+                <img src="img/G.webp" alt="">
+                <img src="img/H.webp" alt="">
+                <img src="img/I.webp" alt="">
+                <img src="img/J.webp" alt="">
+                <img src="img/K.webp" alt="">
+                <img src="img/L.webp" alt="">
+            </div>
+            <div class="small-slide">
+                <img src="img/A.webp" alt="">
+                <img src="img/B.webp" alt="">
+                <img src="img/C.webp" alt="">
+                <img src="img/D.webp" alt="">
+                <img src="img/E.webp" alt="">
+                <img src="img/F.webp" alt="">
+                <img src="img/G.webp" alt="">
+                <img src="img/H.webp" alt="">
+                <img src="img/I.webp" alt="">
+                <img src="img/J.webp" alt="">
+                <img src="img/K.webp" alt="">
+                <img src="img/L.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="inscription">
+        <div class="container">
+            <div class="signup-container slide-in-right">
+                <h2>Sign Up for IPTV</h2>
+                <form action="/submit_signup" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <a href="GetStarted.html"><button type="submit">Sign Up</button></a>
+                </form>
+            </div>
+
+            <div class="faq-container">
+                <h2 class="slide-in-right">Frequently Asked Questions</h2>
+                <div class="faq">
+                    <h4 class="slide-in-left">What is IPTV?</h4>
+                    <p class="slide-in-left">IPTV stands for Internet Protocol Television, which allows you to stream live TV channels and on-demand content over the internet.</p>
+                </div>
+                <div class="faq">
+                    <h4 class="slide-in-left">How do I sign up?</h4>
+                    <p class="slide-in-left">Simply fill out the form with your username, email, and password, then click the Sign Up button.</p>
+                </div>
+                <div class="faq">
+                    <h4 class="slide-in-left">Is there a free trial available?</h4>
+                    <p class="slide-in-left">Yes, we offer a 7-day free trial for all new users. You can sign up without any commitment and cancel anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <hr class="hrTHT fade-in">
+
+    <section class="mapSection">
+        <div class="Lmofiid slide-in-left">
+            <h1>More than 2K servers in 198 countries</h1>
+            <h4>Our customers are spread all over the world, and to serve them best, 
+                our servers are spread all over the world to provide the best quality to our customers.</h4>
+
+            <button class="ContactUsBtn slide-in-right">Contact Us</button>
+        </div>
+
+        <img class="slide-in-right" src="img/map.png" alt="">
+    </section>
+    <br>
+    <hr class="hrTHT fade-in">
+
+    
+<!-- ================================================================================================  CHANNELS -================================================================ -->
+    <section class="channelsSection" id="channelsSection">
+        <h1 class="zoom-in">IPTV Channel List</h1>
+        <div class="channel-list">
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/3.jpg" alt="">
+                </div>
+                <div class="channel-title">HBO</div>
+            </div>
+
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/4.jpg" alt="">
+                </div>
+                <div class="channel-title">Prime Video</div>
+            </div>
+
+            <div class="channel slide-in-right">
+                <div class="channel-logo">
+                    <img src="Channels IMG/9.jpg" alt="">
+                </div>
+                <div class="channel-title">Apple TV+</div>
+            </div>
+            
+            <div class="channel slide-in-right">
+                <div class="channel-logo">
+                    <img src="Channels IMG/8.jpg" alt="">
+                </div>
+                <div class="channel-title">Netflix</div>
+            </div>
+
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/7.jpg" alt="">
+                </div>
+                <div class="channel-title">Disnep</div>
+            </div>
+            
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/2.jpg" alt="">
+                </div>
+                <div class="channel-title">Cartoon Network</div>
+            </div>
+
+            <div class="channel slide-in-right">
+                <div class="channel-logo">
+                    <img src="Channels IMG/1.jpg" alt="">
+                </div>
+                <div class="channel-title">Bein Sport</div>
+            </div>
+
+            <div class="channel slide-in-right">
+                <div class="channel-logo">
+                    <img src="Channels IMG/6.jpg" alt="">
+                </div>
+                <div class="channel-title">Uber</div>
+            </div>
+
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/5.jpg" alt="">
+                </div>
+                <div class="channel-title">CNN</div>
+            </div>
+
+            <div class="channel slide-in-left">
+                <div class="channel-logo">
+                    <img src="Channels IMG/10.jpg" alt="">
+                </div>
+                <div class="channel-title">Start+</div>
+            </div>
+
+            <div class="channel">
+                <div class="channel-logo slide-in-right">
+                    <img src="Channels IMG/11.jpg" alt="">
+                </div>
+                <div class="channel-title">Paramount+</div>
+            </div>
+
+            <div class="channel">
+                <div class="channel-logo slide-in-right">
+                    <img src="Channels IMG/12.jpg" alt="">
+                </div>
+                <div class="channel-title">ViX</div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <br>
+    <br>
+    <hr class="hrTHT fade-in">
+    <br>
+    <!-- ====================================================================================== INSTALLATION GUIDE ================================================================= -->
+    <section class="installation-guide" id="installation-guide">
+        <h1 class="zoom-in">Installation Guide</h1>
+        <div class="steps-container">
+            <div class="step slide-in-left">
+                <div class="step-icon">
+                    <img src="icons/Download Icon.jpeg" alt="Download Icon">
+                </div>
+                <div class="step-content">
+                    <h2>Step 1: Download the Software</h2>
+                    <p>Click the link below to download the necessary software for IPTV installation.</p>
+                    <a href="download_link" class="download-btn">Download Now</a>
+                </div>
+            </div>
+    
+            <div class="step slide-in-right">
+                <div class="step-icon">
+                    <img src="icons/exit icon.jpeg" alt="Install Icon">
+                </div>
+                <div class="step-content">
+                    <h2>Step 2: Install the Software</h2>
+                    <p>Run the downloaded file and follow the on-screen instructions to install the software.</p>
+                </div>
+            </div>
+    
+            <div class="step slide-in-left">
+                <div class="step-icon">
+                    <img src="icons/setting.jpeg" alt="Settings Icon">
+                </div>
+                <div class="step-content">
+                    <h2>Step 3: Configure Settings</h2>
+                    <p>Open the installed software and enter the provided configuration settings to set up your IPTV service.</p>
+                </div>
+            </div>
+    
+            <div class="step slide-in-right">
+                <div class="step-icon">
+                    <img src="icons/Cloud Icon.jpeg" alt="Enjoy Icon">
+                </div>
+                <div class="step-content">
+                    <h2>Step 4: Enjoy Your IPTV Service</h2>
+                    <p>Once configured, you can start watching your favorite channels and shows. Enjoy!</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-tutorial" id="MyVideo">
+            <h2 class="zoom-in">Watch the Video Tutorial</h2>
+            <video width="80%" height="500px" controls>
+                <source src="VD/Cristiano Ronaldo ● Crazy Skills & Goals ● Portugal HD.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="faqs">
+            <h2 class="zoom-in">FAQs</h2>
+            <div class="faq-item slide-in-left">
+                <h3>Q: What do I do if I encounter an error during installation?</h3>
+                <p>A: Check our troubleshooting guide or contact our support team for assistance.</p>
+            </div>
+            <div class="faq-item slide-in-right">
+                <h3>Q: How can I update the software?</h3>
+                <p>A: You can download the latest version from our website and follow the installation steps again.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <br>
+    <br>
+
+    <hr class="hrTHT fade-in">
+    <br>
+    <br>
+
+    <!-- ==============================================================-======-=  RESELLER ============================================================================= -->
+    <section class="reseller-section" id="reseller-section">
+        <h1 class="zoom-in">Become a Reseller</h1>
+        
+        <div class="reseller-intro">
+            <p>Join our reseller program and start earning by selling our IPTV services. Enjoy exclusive benefits and support as a trusted partner.</p>
+        </div>
+        
+        <div class="reseller-benefits">
+            <h2 class="zoom-in">Benefits</h2>
+            <ul class="benefits-list">
+                <li class="slide-in-left"><i class="fa-solid fa-check"></i> High Commission Rates</li>
+                <li class="slide-in-right"><i class="fa-solid fa-check"></i> Dedicated Support</li>
+                <li class="slide-in-left"><i class="fa-solid fa-check"></i> Marketing Materials</li>
+                <li class="slide-in-right"><i class="fa-solid fa-check"></i> Easy Management</li>
+            </ul>
+        </div>
+        
+        <div class="how-it-works">
+            <h2 class="zoom-in">How It Works</h2>
+            <div class="steps-container">
+                <div class="step slide-in-left">
+                    <div class="step-icon">
+                        <img src="icons/register.png" alt="Register Icon">
+                    </div>
+                    <div class="step-content">
+                        <h3>Step 1: Register</h3>
+                        <p>Sign up for our reseller program and get access to your reseller dashboard.</p>
+                    </div>
+                </div>
+                
+                <div class="step slide-in-right">
+                    <div class="step-icon">
+                        <img src="icons/promote.png" alt="Promote Icon">
+                    </div>
+                    <div class="step-content">
+                        <h3>Step 2: Promote</h3>
+                        <p>Use our marketing materials to promote our IPTV services and attract customers.</p>
+                    </div>
+                </div>
+                
+                <div class="step slide-in-left">
+                    <div class="step-icon">
+                        <img src="icons/earn.png" alt="Earn Icon">
+                    </div>
+                    <div class="step-content">
+                        <h3>Step 3: Earn</h3>
+                        <p>Earn high commissions for every customer you bring in. Track your earnings in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="join-now">
+            <h2 class="zoom-in">Join Now</h2>
+            <a href="reseller_signup.html" class="join-btn">Sign Up Today</a>
+        </div>
+        
+        <div class="contact-info">
+            <h2 class="zoom-in">Need More Info?</h2>
+            <p>If you have any questions or need more information, feel free to contact us at <a href="mailto:support@iptvservice.com">support@iptvservice.com</a> or call us at +1 234 567 890.</p>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <hr class="hrTHT fade-in">
+    <br>
+    <br>
+    <!--========================================================================    ORDER NOW   ================================================================ -->
+
+    <section class="order-now-section" id="order-now-section">
+        <h1 class="zoom-in">Order Now</h1>
+        
+        <div class="order-intro">
+            <p>Get access to our premium IPTV services today. Choose the package that suits you best and start enjoying a wide range of channels and content.</p>
+        </div>
+
+
+        <h2 class="zoom-in">Our Packages</h2>
+        <div class="packages">
+            <div class="package slide-in-left">
+                <h3>Basic Package</h3>
+                <p>Access to 100+ channels</p>
+                <p>Price: $9.99/month</p>
+                <a href="order_basic.html" class="order-btn">Order Now</a>
+            </div>
+            
+            <div class="package slide-in-right">
+                <h3>Standard Package</h3>
+                <p>Access to 200+ channels</p>
+                <p>Price: $14.99/month</p>
+                <a href="order_standard.html" class="order-btn">Order Now</a>
+            </div>
+            
+            <div class="package slide-in-left">
+                <h3>Premium Package</h3>
+                <p>Access to 300+ channels</p>
+                <p>Price: $19.99/month</p>
+                <a href="order_premium.html" class="order-btn">Order Now</a>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2 class="zoom-in">Need Assistance?</h2>
+            <p>If you have any questions or need help with your order, please contact us at <a href="mailto:support@iptvwebsite.com">support@iptvwebsite.com</a> or call us at (123) 456-7890.</p>
+        </div>
+    </section>
+    
+
+
+
+    <!-- ============================================================================== FOOTER ================================================================ -->
+
+    <footer>
+        <div class="footer-container fade-in">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are the #1 trusted and established IPTV provider, committed to exceeding customer expectations and cultivating enduring relationships.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Channels</a></li>
+                    <li><a href="#">Installation Guide</a></li>
+                    <li><a href="#">Reseller</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@iptvservice.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 IPTV St, Streaming City, SC 12345</p>
+            </div>
+
+            <div class="footer-section Payment">
+                <h3>Payment Methode</h3>
+                <div class="PaymentIcons">
+                    <!-- <i class='bx bxl-paypal'></i>
+                    <i class='bx bxl-visa' ></i>
+                    <i class='bx bxl-mastercard' ></i> -->
+                    <img src="img/paypal.jpg" alt="">
+                    <img src="img/Visa.jpg" alt="">
+                    <img src="img/mastercard.jpg" alt="">
+                    <img src="img/googlepay.jpg" alt="">
+                    <img src="img/applepay.jpg" alt="">
+                    <img src="img/fedex.jpg" alt="">
+
+                </div>
+
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 IPTV Service. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script>
+          document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            },300);
+        });
+
+
+        // Function to handle scroll events
+        function onScroll() {
+            const elements = document.querySelectorAll('.hidden');
+            elements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.remove('.hidden');
+            }
+            });
+        }
+        const hiddenElements = document.querySelector('.hidden');
+
+
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('hidden');
+                    } else {
+                        entry.target.classList.remove('hidden');
+                        }
+            })
+        });
+
+
+        // Listen for scroll events
+        window.addEventListener('scroll', onScroll);
+        
+        // Initial check in case elements are already in viewport
+        onScroll();
+                
+
+
+
+        // const MenuButton = document.getElementById('bar');
+        // if (window.matchMedia("(min-width: 900px)").matches) {
+        //     MenuButton.style.display = 'none';
+        // }else{
+        //     MenuButton.style.display = 'block';
+        // }
+      
+        function toggleMenu() {
+            const nav = document.getElementById('nv');
+            nav.classList.toggle('active');
+        }
+        
+
+        
+       
+
+        
+
+
+    </script>
+
+
+</body>
+</html>
